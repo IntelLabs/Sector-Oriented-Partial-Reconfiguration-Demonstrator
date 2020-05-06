@@ -1,0 +1,447 @@
+set_global_assignment -name TOP_LEVEL_ENTITY system
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:30:39  JUNE 21, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Pro Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name DEVICE 1SG280HU2F50E2VGS1
+set_global_assignment -name FAMILY "Stratix 10"
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_instance_assignment -name PARTITION_COLOUR 4289704959 -to system -entity system
+set_instance_assignment -name PARTITION_COLOUR 4294916195 -to auto_fab_0 -entity system
+set_location_assignment PIN_J20 -to clk_clk
+set_instance_assignment -name IO_STANDARD LVDS -to clk_clk -entity system
+set_location_assignment PIN_J19 -to "clk_clk(n)"
+set_location_assignment PIN_A20 -to reset_reset_n
+set_instance_assignment -name IO_STANDARD "1.8 V" -to reset_reset_n -entity system
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name REVISION_TYPE PR_BASE
+set_instance_assignment -name PARTITION_COLOUR 4292783359 -to sector1|pr_persona_wrapper|auto_fab_8 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4288806844 -to sector2|pr_persona_wrapper|auto_fab_7 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4282974122 -to sector3|pr_persona_wrapper|auto_fab_6 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4294573891 -to sector4|pr_persona_wrapper|auto_fab_5 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4286971879 -to sector5|pr_persona_wrapper|auto_fab_4 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4292257791 -to sector6|pr_persona_wrapper|auto_fab_3 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4282711920 -to sector7|pr_persona_wrapper|auto_fab_2 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4288983039 -to sector8|pr_persona_wrapper|auto_fab_1 -entity system
+set_global_assignment -name USE_SIGNALTAP_FILE stp2.stp
+set_instance_assignment -name PARTITION s4_parent_partition -to sector4 -entity system
+set_instance_assignment -name PLACE_REGION "X87 Y109 X120 Y144" -to sector1
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector1
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector1
+set_instance_assignment -name ROUTE_REGION "X87 Y109 X120 Y144" -to sector1
+set_instance_assignment -name REGION_NAME s1 -to sector1
+set_instance_assignment -name PLACE_REGION "X53 Y109 X86 Y144" -to sector0
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector0
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector0
+set_instance_assignment -name ROUTE_REGION "X53 Y109 X86 Y144" -to sector0
+set_instance_assignment -name REGION_NAME s0 -to sector0
+set_instance_assignment -name PLACE_REGION "X121 Y109 X154 Y144" -to sector2
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector2
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector2
+set_instance_assignment -name ROUTE_REGION "X121 Y109 X154 Y144" -to sector2
+set_instance_assignment -name REGION_NAME s2 -to sector2
+set_instance_assignment -name PLACE_REGION "X53 Y73 X86 Y108" -to sector3
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector3
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector3
+set_instance_assignment -name ROUTE_REGION "X53 Y73 X86 Y108" -to sector3
+set_instance_assignment -name REGION_NAME s3 -to sector3
+set_instance_assignment -name PLACE_REGION "X87 Y73 X120 Y108" -to sector4
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector4
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector4
+set_instance_assignment -name ROUTE_REGION "X87 Y73 X120 Y108" -to sector4
+set_instance_assignment -name REGION_NAME s4 -to sector4
+set_instance_assignment -name PLACE_REGION "X121 Y73 X154 Y108" -to sector5
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector5
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector5
+set_instance_assignment -name REGION_NAME s5 -to sector5
+set_instance_assignment -name ROUTE_REGION "X121 Y73 X154 Y108" -to sector5
+set_instance_assignment -name PLACE_REGION "X87 Y37 X120 Y72" -to sector7
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector7
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector7
+set_instance_assignment -name ROUTE_REGION "X87 Y37 X120 Y72" -to sector7
+set_instance_assignment -name REGION_NAME s7 -to sector7
+set_instance_assignment -name PLACE_REGION "X121 Y37 X154 Y72" -to sector8
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector8
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector8
+set_instance_assignment -name ROUTE_REGION "X121 Y37 X154 Y72" -to sector8
+set_instance_assignment -name REGION_NAME s8 -to sector8
+set_instance_assignment -name PLACE_REGION "X53 Y37 X86 Y72" -to sector6
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector6
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector6
+set_instance_assignment -name ROUTE_REGION "X53 Y37 X86 Y72" -to sector6
+set_instance_assignment -name REGION_NAME s6 -to sector6
+set_instance_assignment -name PARTITION_COLOUR 4294922072 -to sector4 -entity system
+set_instance_assignment -name PARTITION s1_parent_partition -to sector1 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4288151452 -to sector1 -entity system
+set_instance_assignment -name PARTITION s2_parent_partition -to sector2 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4293721964 -to sector2 -entity system
+set_instance_assignment -name PARTITION s3_parent_partition -to sector3 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4294941037 -to sector3 -entity system
+set_instance_assignment -name PARTITION s5_parent_partition -to sector5 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4294923137 -to sector5 -entity system
+set_instance_assignment -name PARTITION s6_parent_partition -to sector6 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4294922603 -to sector6 -entity system
+set_instance_assignment -name PARTITION s7_parent_partition -to sector7 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4287948287 -to sector7 -entity system
+set_instance_assignment -name PARTITION s8_parent_partition -to sector8 -entity system
+set_instance_assignment -name PARTITION_COLOUR 4287889359 -to sector8 -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector4 -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector2 -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector3 -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector5 -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector6 -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector7 -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector8 -entity system
+set_instance_assignment -name PARTITION s1_user_partition -to sector1|user_logic -entity system
+set_instance_assignment -name PARTITION_COLOUR 4294942928 -to sector1|user_logic -entity system
+set_instance_assignment -name PARTITION s2_user_partition -to sector2|user_logic -entity system
+set_instance_assignment -name PARTITION_COLOUR 4289064447 -to sector2|user_logic -entity system
+set_instance_assignment -name PARTITION s3_user_partition -to sector3|user_logic -entity system
+set_instance_assignment -name PARTITION_COLOUR 4292636927 -to sector3|user_logic -entity system
+set_instance_assignment -name PARTITION s4_user_partition -to sector4|user_logic -entity system
+set_instance_assignment -name PARTITION_COLOUR 4283432833 -to sector4|user_logic -entity system
+set_instance_assignment -name PARTITION s5_user_partition -to sector5|user_logic -entity system
+set_instance_assignment -name PARTITION_COLOUR 4290445221 -to sector5|user_logic -entity system
+set_instance_assignment -name PARTITION s6_user_partition -to sector6|user_logic -entity system
+set_instance_assignment -name PARTITION_COLOUR 4284129279 -to sector6|user_logic -entity system
+set_instance_assignment -name PARTITION s7_user_partition -to sector7|user_logic -entity system
+set_instance_assignment -name PARTITION_COLOUR 4288806886 -to sector7|user_logic -entity system
+set_instance_assignment -name PARTITION s8_user_partition -to sector8|user_logic -entity system
+set_instance_assignment -name PARTITION_COLOUR 4285923135 -to sector8|user_logic -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector8|user_logic -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector7|user_logic -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector6|user_logic -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector5|user_logic -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector4|user_logic -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector3|user_logic -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector2|user_logic -entity system
+set_instance_assignment -name PLACE_REGION "X90 Y112 X117 Y141" -to sector1|user_logic
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector1|user_logic
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector1|user_logic
+set_instance_assignment -name ROUTE_REGION "X90 Y112 X117 Y141" -to sector1|user_logic
+set_instance_assignment -name REGION_NAME s1_user -to sector1|user_logic
+set_instance_assignment -name PLACE_REGION "X124 Y112 X151 Y141" -to sector2|user_logic
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector2|user_logic
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector2|user_logic
+set_instance_assignment -name ROUTE_REGION "X124 Y112 X151 Y141" -to sector2|user_logic
+set_instance_assignment -name REGION_NAME s2_user -to sector2|user_logic
+set_instance_assignment -name PLACE_REGION "X56 Y76 X83 Y105" -to sector3|user_logic
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector3|user_logic
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector3|user_logic
+set_instance_assignment -name ROUTE_REGION "X56 Y76 X83 Y105" -to sector3|user_logic
+set_instance_assignment -name REGION_NAME s3_user -to sector3|user_logic
+set_instance_assignment -name PLACE_REGION "X90 Y76 X117 Y105" -to sector4|user_logic
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector4|user_logic
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector4|user_logic
+set_instance_assignment -name ROUTE_REGION "X90 Y76 X117 Y105" -to sector4|user_logic
+set_instance_assignment -name REGION_NAME s4_user -to sector4|user_logic
+set_instance_assignment -name PLACE_REGION "X124 Y76 X151 Y105" -to sector5|user_logic
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector5|user_logic
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector5|user_logic
+set_instance_assignment -name ROUTE_REGION "X124 Y76 X151 Y105" -to sector5|user_logic
+set_instance_assignment -name REGION_NAME s5_user -to sector5|user_logic
+set_instance_assignment -name PLACE_REGION "X56 Y40 X83 Y69" -to sector6|user_logic
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector6|user_logic
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector6|user_logic
+set_instance_assignment -name ROUTE_REGION "X56 Y40 X83 Y69" -to sector6|user_logic
+set_instance_assignment -name REGION_NAME s6_user -to sector6|user_logic
+set_instance_assignment -name PLACE_REGION "X90 Y40 X117 Y69" -to sector7|user_logic
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector7|user_logic
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector7|user_logic
+set_instance_assignment -name ROUTE_REGION "X90 Y40 X117 Y69" -to sector7|user_logic
+set_instance_assignment -name REGION_NAME s7_user -to sector7|user_logic
+set_instance_assignment -name PLACE_REGION "X124 Y40 X151 Y69" -to sector8|user_logic
+set_instance_assignment -name RESERVE_PLACE_REGION ON -to sector8|user_logic
+set_instance_assignment -name CORE_ONLY_PLACE_REGION ON -to sector8|user_logic
+set_instance_assignment -name ROUTE_REGION "X124 Y40 X151 Y69" -to sector8|user_logic
+set_instance_assignment -name REGION_NAME s8_user -to sector8|user_logic
+set_global_assignment -name QIP_FILE software/s0/mem_init/meminit.qip
+set_global_assignment -name VERILOG_FILE pr_handshake.v
+set_global_assignment -name QIP_FILE software/s8/mem_init/meminit.qip
+set_global_assignment -name QIP_FILE software/s7/mem_init/meminit.qip
+set_global_assignment -name QIP_FILE software/s6/mem_init/meminit.qip
+set_global_assignment -name QIP_FILE software/s5/mem_init/meminit.qip
+set_global_assignment -name QIP_FILE software/s4/mem_init/meminit.qip
+set_global_assignment -name QIP_FILE software/s3/mem_init/meminit.qip
+set_global_assignment -name QIP_FILE software/s2/mem_init/meminit.qip
+set_global_assignment -name QIP_FILE software/s1/mem_init/meminit.qip
+set_global_assignment -name SDC_FILE test_noc.out.sdc
+set_global_assignment -name QSYS_FILE sector7.qsys
+set_global_assignment -name IP_FILE ip/sector0/sector0_clock_in.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_reset_in.ip
+set_global_assignment -name QSYS_FILE sector0.qsys
+set_global_assignment -name IP_FILE ip/sector1/sector1_clock_in.ip
+set_global_assignment -name IP_FILE ip/sector1/sector1_reset_in.ip
+set_global_assignment -name QSYS_FILE sector1.qsys
+set_global_assignment -name IP_FILE ip/sector2/sector2_clock_in.ip
+set_global_assignment -name IP_FILE ip/sector2/sector2_reset_in.ip
+set_global_assignment -name QSYS_FILE sector2.qsys
+set_global_assignment -name IP_FILE ip/system/system_clock_in.ip
+set_global_assignment -name QSYS_FILE system.qsys
+set_global_assignment -name IP_FILE ip/sector1/s1_local_in.ip
+set_global_assignment -name IP_FILE ip/sector1/s1_east_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector0/s0_local_out.ip
+set_global_assignment -name IP_FILE ip/sector0/s0_east_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector0/s0_local_in.ip
+set_global_assignment -name IP_FILE ip/sector1/s1_west_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector2/s2_local_out.ip
+set_global_assignment -name IP_FILE ip/sector2/s2_west_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector1/s1_local_out.ip
+set_global_assignment -name IP_FILE ip/sector2/s2_local_in.ip
+set_global_assignment -name IP_FILE ip/sector2/s2_south_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector1/s1_south_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector0/s0_south_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_north_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_east_out_extender.ip
+set_global_assignment -name QSYS_FILE sector3.qsys
+set_global_assignment -name IP_FILE ip/sector3/sector3_clock_in.ip
+set_global_assignment -name IP_FILE ip/sector3/sector3_reset_in.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_local_in.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_local_out.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_local_in.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_local_out.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_west_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_north_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_east_out_extender.ip
+set_global_assignment -name QSYS_FILE sector4.qsys
+set_global_assignment -name IP_FILE ip/sector4/sector4_clock_in.ip
+set_global_assignment -name IP_FILE ip/sector4/sector4_reset_in.ip
+set_global_assignment -name QSYS_FILE sector5.qsys
+set_global_assignment -name IP_FILE ip/sector5/sector5_clock_in.ip
+set_global_assignment -name IP_FILE ip/sector5/sector5_reset_in.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_west_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_local_in.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_local_out.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_north_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_south_out_extender.ip
+set_global_assignment -name QSYS_FILE sector6.qsys
+set_global_assignment -name IP_FILE ip/sector6/sector6_clock_in.ip
+set_global_assignment -name IP_FILE ip/sector6/sector6_reset_in.ip
+set_global_assignment -name IP_FILE ip/sector6/s6_local_in.ip
+set_global_assignment -name IP_FILE ip/sector6/s6_local_out.ip
+set_global_assignment -name IP_FILE ip/sector6/s6_north_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector6/s6_east_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector7/sector7_clock_in.ip
+set_global_assignment -name IP_FILE ip/sector7/sector7_reset_in.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_local_in.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_local_out.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_west_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_north_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_east_out_extender.ip
+set_global_assignment -name QSYS_FILE sector8.qsys
+set_global_assignment -name IP_FILE ip/sector8/sector8_clock_in.ip
+set_global_assignment -name IP_FILE ip/sector8/sector8_reset_in.ip
+set_global_assignment -name IP_FILE ip/sector8/s8_local_in.ip
+set_global_assignment -name IP_FILE ip/sector8/s8_local_out.ip
+set_global_assignment -name IP_FILE ip/sector8/s8_north_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector8/s8_west_out_extener.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_south_out_extender.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_south_out_extender.ip
+set_global_assignment -name IP_FILE ip/user0/user0_clock_in.ip
+set_global_assignment -name IP_FILE ip/user0/user0_reset_in.ip
+set_global_assignment -name QSYS_FILE user0.qsys
+set_global_assignment -name IP_FILE ip/user0/user0_onchip_memory2_0.ip
+set_global_assignment -name IP_FILE ip/user0/user0_nios2_gen2_0.ip
+set_global_assignment -name IP_FILE ip/user0/user0_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/user1/user1_clock_in.ip
+set_global_assignment -name IP_FILE ip/user1/user1_reset_in.ip
+set_global_assignment -name QSYS_FILE user1.qsys
+set_global_assignment -name IP_FILE ip/user1/user1_onchip_memory2_0.ip
+set_global_assignment -name IP_FILE ip/user1/user1_nios2_gen2_0.ip
+set_global_assignment -name IP_FILE ip/user1/user1_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/user2/user2_clock_in.ip
+set_global_assignment -name IP_FILE ip/user2/user2_reset_in.ip
+set_global_assignment -name QSYS_FILE user2.qsys
+set_global_assignment -name IP_FILE ip/user2/user2_onchip_memory2_0.ip
+set_global_assignment -name IP_FILE ip/user2/user2_nios2_gen2_0.ip
+set_global_assignment -name IP_FILE ip/user2/user2_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/user3/user3_clock_in.ip
+set_global_assignment -name IP_FILE ip/user3/user3_reset_in.ip
+set_global_assignment -name QSYS_FILE user3.qsys
+set_global_assignment -name IP_FILE ip/user3/user3_onchip_memory2_0.ip
+set_global_assignment -name IP_FILE ip/user3/user3_nios2_gen2_0.ip
+set_global_assignment -name IP_FILE ip/user3/user3_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/user4/user4_clock_in.ip
+set_global_assignment -name IP_FILE ip/user4/user4_reset_in.ip
+set_global_assignment -name QSYS_FILE user4.qsys
+set_global_assignment -name IP_FILE ip/user4/user4_onchip_memory2_0.ip
+set_global_assignment -name IP_FILE ip/user4/user4_nios2_gen2_0.ip
+set_global_assignment -name IP_FILE ip/user4/user4_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/user5/user5_clock_in.ip
+set_global_assignment -name IP_FILE ip/user5/user5_reset_in.ip
+set_global_assignment -name QSYS_FILE user5.qsys
+set_global_assignment -name IP_FILE ip/user5/user5_onchip_memory2_0.ip
+set_global_assignment -name IP_FILE ip/user5/user5_nios2_gen2_0.ip
+set_global_assignment -name IP_FILE ip/user5/user5_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/user6/user6_clock_in.ip
+set_global_assignment -name IP_FILE ip/user6/user6_reset_in.ip
+set_global_assignment -name QSYS_FILE user6.qsys
+set_global_assignment -name IP_FILE ip/user6/user6_onchip_memory2_0.ip
+set_global_assignment -name IP_FILE ip/user6/user6_nios2_gen2_0.ip
+set_global_assignment -name IP_FILE ip/user6/user6_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/user7/user7_clock_in.ip
+set_global_assignment -name IP_FILE ip/user7/user7_reset_in.ip
+set_global_assignment -name QSYS_FILE user7.qsys
+set_global_assignment -name IP_FILE ip/user7/user7_onchip_memory2_0.ip
+set_global_assignment -name IP_FILE ip/user7/user7_nios2_gen2_0.ip
+set_global_assignment -name IP_FILE ip/user7/user7_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/user8/user8_clock_in.ip
+set_global_assignment -name IP_FILE ip/user8/user8_reset_in.ip
+set_global_assignment -name QSYS_FILE user8.qsys
+set_global_assignment -name IP_FILE ip/user8/user8_onchip_memory2_0.ip
+set_global_assignment -name IP_FILE ip/user8/user8_nios2_gen2_0.ip
+set_global_assignment -name IP_FILE ip/user8/user8_mm_bridge_0.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_fifo_0.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_security_filter_0.ip
+set_global_assignment -name IP_FILE ip/sector1/sector1_fifo_0.ip
+set_global_assignment -name IP_FILE ip/sector1/sector1_security_filter_0.ip
+set_global_assignment -name IP_FILE ip/sector2/sector2_security_filter_0.ip
+set_global_assignment -name IP_FILE ip/sector2/sector2_fifo_0.ip
+set_global_assignment -name IP_FILE ip/sector3/sector3_fifo_0.ip
+set_global_assignment -name IP_FILE ip/sector3/sector3_security_filter_0.ip
+set_global_assignment -name IP_FILE ip/sector4/sector4_security_filter_0.ip
+set_global_assignment -name IP_FILE ip/sector4/sector4_fifo_0.ip
+set_global_assignment -name IP_FILE ip/sector5/sector5_fifo_0.ip
+set_global_assignment -name IP_FILE ip/sector5/sector5_security_filter_0.ip
+set_global_assignment -name IP_FILE ip/sector6/sector6_fifo_0.ip
+set_global_assignment -name IP_FILE ip/sector6/sector6_security_filter_0.ip
+set_global_assignment -name IP_FILE ip/sector7/sector7_fifo_0.ip
+set_global_assignment -name IP_FILE ip/sector7/sector7_security_filter_0.ip
+set_global_assignment -name IP_FILE ip/sector8/sector8_fifo_0.ip
+set_global_assignment -name IP_FILE ip/sector8/sector8_security_filter_0.ip
+set_global_assignment -name IP_FILE ip/sector1/sector1_default_slave_0.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_default_slave_0.ip
+set_global_assignment -name IP_FILE ip/sector2/sector2_default_slave_0.ip
+set_global_assignment -name IP_FILE ip/sector3/sector3_default_slave_0.ip
+set_global_assignment -name IP_FILE ip/sector4/sector4_default_slave_0.ip
+set_global_assignment -name IP_FILE ip/sector5/sector5_default_slave_0.ip
+set_global_assignment -name IP_FILE ip/sector6/sector6_default_slave_0.ip
+set_global_assignment -name IP_FILE ip/sector7/sector7_default_slave_0.ip
+set_global_assignment -name IP_FILE ip/sector8/sector8_default_slave_0.ip
+set_global_assignment -name IP_FILE ip/system/system_reset_bridge_0.ip
+set_global_assignment -name IP_FILE ip/user0/user0_sysid_qsys_0.ip
+set_global_assignment -name IP_FILE ip/user1/user1_sysid_qsys_0.ip
+set_global_assignment -name IP_FILE ip/user2/user2_sysid_qsys_0.ip
+set_global_assignment -name IP_FILE ip/user3/user3_sysid_qsys_0.ip
+set_global_assignment -name IP_FILE ip/user4/user4_sysid_qsys_0.ip
+set_global_assignment -name IP_FILE ip/user5/user5_sysid_qsys_0.ip
+set_global_assignment -name IP_FILE ip/user6/user6_sysid_qsys_0.ip
+set_global_assignment -name IP_FILE ip/user7/user7_sysid_qsys_0.ip
+set_global_assignment -name IP_FILE ip/user8/user8_sysid_qsys_0.ip
+set_global_assignment -name IP_FILE ip/sector3/sector3_pr_region_controller_0.ip
+set_global_assignment -name IP_FILE ip/sector4/sector4_pr_region_controller_0.ip
+set_global_assignment -name IP_FILE ip/sector5/sector5_pr_region_controller_0.ip
+set_global_assignment -name IP_FILE ip/sector6/sector6_pr_region_controller_0.ip
+set_global_assignment -name IP_FILE ip/sector7/sector7_pr_region_controller_0.ip
+set_global_assignment -name IP_FILE ip/sector8/sector8_pr_region_controller_0.ip
+set_global_assignment -name IP_FILE ip/sector1/sector1_pr_region_controller_0.ip
+set_global_assignment -name IP_FILE ip/sector6/s6_east_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_north_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_west_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_north_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector1/s1_east_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector1/s1_east_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector1/s1_west_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector1/s1_west_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_west_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_west_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_north_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_north_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_east_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_east_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_south_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector4/s4_south_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector1/s1_south_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector1/s1_south_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector2/s2_west_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector2/s2_west_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector2/s2_south_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector2/s2_south_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_south_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_south_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_north_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_north_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_east_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector3/s3_east_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_west_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_south_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector5/s5_south_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector6/s6_north_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector6/s6_north_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector6/s6_east_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_west_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_west_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_north_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_north_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_east_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector7/s7_east_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector8/s8_north_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector8/s8_north_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector8/s8_west_in_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector8/s8_west_out_freeze_bridge.ip
+set_global_assignment -name IP_FILE ip/sector1/sector1_pr_region_controller_1.ip
+set_global_assignment -name IP_FILE ip/sector1/sector1_pr_region_controller_2.ip
+set_global_assignment -name IP_FILE ip/sector2/sector2_pr_region_controller_0.ip
+set_global_assignment -name IP_FILE ip/sector2/sector2_pr_region_controller_1.ip
+set_global_assignment -name IP_FILE ip/sector3/sector3_pr_region_controller_1.ip
+set_global_assignment -name IP_FILE ip/sector4/sector4_pr_region_controller_1.ip
+set_global_assignment -name IP_FILE ip/sector4/sector4_pr_region_controller_2.ip
+set_global_assignment -name IP_FILE ip/sector4/sector4_pr_region_controller_3.ip
+set_global_assignment -name IP_FILE ip/sector5/sector5_pr_region_controller_1.ip
+set_global_assignment -name IP_FILE ip/sector5/sector5_pr_region_controller_2.ip
+set_global_assignment -name IP_FILE ip/sector6/sector6_pr_region_controller_1.ip
+set_global_assignment -name IP_FILE ip/sector7/sector7_pr_region_controller_1.ip
+set_global_assignment -name IP_FILE ip/sector7/sector7_pr_region_controller_2.ip
+set_global_assignment -name IP_FILE ip/sector8/sector8_pr_region_controller_1.ip
+set_global_assignment -name IP_FILE ip/sector3/sector3_pr_region_controller_2.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_region_controller_0.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_region_controller_1.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_avlmm_pr_freeze_bridge_0.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_avlmm_pr_freeze_bridge_1.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_avlmm_pr_freeze_bridge_2.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_avlmm_pr_freeze_bridge_3.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pio_1.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pio_2.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pio_3.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pio_4.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pio_5.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pio_6.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pio_7.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pio_8.ip
+set_global_assignment -name SIGNALTAP_FILE stp2.stp
+set_global_assignment -name IP_FILE ip/sector0/sector0_pio_0.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_control_2port_0.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_control_4port_0.ip
+set_global_assignment -name IP_FILE ip/sector2/sector2_pr_handshake_0.ip
+set_global_assignment -name IP_FILE ip/sector2/sector2_s2_user_logic_wrapper_0.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_handshake_0.ip
+set_global_assignment -name IP_FILE ip/sector1/sector1_pr_handshake_0.ip
+set_global_assignment -name IP_FILE ip/sector1/sector1_s1_user_logic_wrapper_0.ip
+set_global_assignment -name IP_FILE ip/sector3/sector3_pr_handshake_0.ip
+set_global_assignment -name IP_FILE ip/sector3/sector3_s3_user_logic_wrapper_0.ip
+set_global_assignment -name IP_FILE ip/sector4/sector4_pr_handshake_0.ip
+set_global_assignment -name IP_FILE ip/sector4/sector4_s4_user_logic_wrapper_0.ip
+set_global_assignment -name IP_FILE ip/sector5/sector5_pr_handshake_0.ip
+set_global_assignment -name IP_FILE ip/sector5/sector5_s5_user_logic_wrapper_0.ip
+set_global_assignment -name IP_FILE ip/sector6/sector6_s6_user_logic_wrapper_0.ip
+set_global_assignment -name IP_FILE ip/sector6/sector6_pr_handshake_0.ip
+set_global_assignment -name IP_FILE ip/sector7/sector7_pr_handshake_0.ip
+set_global_assignment -name IP_FILE ip/sector7/sector7_s7_user_logic_wrapper_0.ip
+set_global_assignment -name IP_FILE ip/sector8/sector8_pr_handshake_0.ip
+set_global_assignment -name IP_FILE ip/sector8/sector8_s8_user_logic_wrapper_0.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pio_9.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_reset_source_conduit_0.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_control_4port_1.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_control_4port_2.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_control_4port_3.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_control_4port_4.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_control_4port_5.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_control_4port_6.ip
+set_global_assignment -name IP_FILE ip/sector0/sector0_pr_control_4port_7.ip
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector1 -entity system
+set_instance_assignment -name PARTIAL_RECONFIGURATION_PARTITION ON -to sector1|user_logic -entity system
+set_global_assignment -name IP_FILE ip/system/system_master_1.ip
